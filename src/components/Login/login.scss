@@ -1,0 +1,61 @@
+@import '../../styles.scss';
+
+.login {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid $shadowColor;
+  @include media('<medium') {
+    flex-direction: column;
+  }
+  .login__form {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    @include media('<medium') {
+      flex-direction: column;
+      align-items: center;
+    }
+    .login__input {
+      width: 15rem;
+      height: 1.8rem;
+      border: none;
+      border-bottom: 1px solid $darkColor;
+      padding: 0.3rem;
+      margin-right: 1rem;
+      outline: none;
+      @include media('<medium') {
+        margin: 0.3rem;
+      }
+    }
+    .login__submit {
+      border: none;
+      width: 6rem;
+      background: $darkColor;
+      color: $secondColor;
+      padding: 0.3rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+      @include media('<medium') {
+        width: 100%;
+      }
+      cursor: pointer;
+      &:active {
+        background: $mainColor;
+      }
+    }
+  }
+  .login__find {
+    color: $darkColor;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-left: 2rem;
+    @include media('<medium') {
+      margin: 0.2rem;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../styles.scss';
+
+.header__box {
+  background: $mainColor;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  @include media('<small') {
+    justify-content: center;
+  }
+  .header__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: $secondColor;
+    background: $secondColor;
+    color: $mainColor;
+    border-radius: 50%;
+  }
+  .header__userinfo {
+    color: $secondColor;
+    font-size: 1rem;
+    font-weight: 200;
+    @include media('<small') {
+      display: none;
+    }
+  }
+}

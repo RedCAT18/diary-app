@@ -1,0 +1,16 @@
+@import '~open-color/open-color';
+@import '~include-media/dist/_include-media';
+
+$mainColor: $oc-cyan-6;
+$lightColor: $oc-cyan-4;
+$darkColor: $oc-cyan-8;
+$shadowColor: $oc-cyan-0;
+
+$secondColor: $oc-indigo-0;
+
+$breakpoints: (
+  small: 376px,
+  medium: 768px,
+  large: 1024px,
+  huge: 1200px
+);

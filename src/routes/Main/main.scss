@@ -1,0 +1,14 @@
+@import '../../styles.scss';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .main__image {
+    max-width: 500px;
+    @include media('<medium') {
+      width: 80%;
+    }
+  }
+}
